@@ -2,8 +2,20 @@
 
 ## Usage
 ### Simple version
+After using ```csvstack``` aggregate all result into one file. 
+Take the this file name as the input file name, run the following command:
+
+```bash
+chmod +x run_all.sh
+./run_all_steps.sh
+```
+
+
 
 ### Detailed Version 
+
+After using ```csvstack```aggregate all result into one file. 
+
 #### Score Calulation
 The ```score_calculation.py``` is the fprogram to calculate the aggregated score (confidence score, independence score ,and user score) for social media posts. This program only calculated the score for each data points, without physical constraints and filter scheme.
 
