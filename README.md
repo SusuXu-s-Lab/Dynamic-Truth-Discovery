@@ -9,6 +9,11 @@ Take the this file name as the input file name, run the following command:
 chmod +x run_all.sh
 ./run_all_steps.sh
 ```
+After the excution finished, run the following command :
+```bash
+python plot_pager.py
+```
+Please input the key values following the instruction and the plot will be produced
 
 
 
