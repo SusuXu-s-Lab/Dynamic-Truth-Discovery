@@ -31,4 +31,12 @@ To run this code:
 python apply_constraint.py --input input_file_name.csv --output output_file_name.csv
 ```
 
-### 
+### Visualization with PAGER
+The ```plot_pager.py``` is the program to produce the PAGER system updating compare with the bayesian updating from the data filtered out. This code consist of serveral major inputs, inlcuding country name, the fatality numbers on the certain time point, Smax value, and the CSV file from previous steps. This code can be directly runed and follow the instructions to input the values.
+
+**Note: This code need to be used after the PAGER successfully installed. And the XML file for the fatality esitmation and economic loss estimation need to be up to date.**
+
+To run this code:
+```bash
+python plot_pager.py
+```
