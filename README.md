@@ -60,4 +60,20 @@ To run this code:
 python plot_pager.py
 ```
 
+## Citation
+We kindly request that you cite our paper if you find our code beneficial. Your acknowledgment is greatly appreciated.
+```
+@article{wang2023near,
+  title={Near-real-time earthquake-induced fatality estimation using crowdsourced data and large-language models},
+  author={Wang, Chenguang and Engler, Davis and Li, Xuechun and Hou, James and Wald, David J and Jaiswal, Kishor and Xu, Susu},
+  journal={arXiv preprint arXiv:2312.03755},
+  year={2023}
+}
+```
+
+
+## Contact
+Please feel free to email sxu83[AT]jh[DOT]edu or chenguang[DOT]wang[AT]stonybrook[DOT]edu for any questions or feedback
+
+
 
