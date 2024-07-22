@@ -1,4 +1,5 @@
 # Dynamic-Truth-Discovery
+This repo is the Dynamic Truth Discovery method implement and visualization project. This project mainly serve to the Project [Hierarchical Earthquake Casualty Information Retrieval](https://github.com/SusuXu-s-Lab/Hierarchical-Earthquake-Casualty-Information-Retrieval/) and is detailed illustrated in the paper [Near-real-time Earthquake-induced Fatality Estimation using Crowdsourced Data and Large-Language Models](https://arxiv.org/abs/2312.03755)
 
 ## Usage
 ### Simple Version
