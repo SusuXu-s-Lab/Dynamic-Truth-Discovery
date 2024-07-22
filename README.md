@@ -40,10 +40,8 @@ To run this code:
 python data_filter.py --input input_file_name.csv --output output_file_name.csv
 ```
 
-#### Physical Constraint
-The `apply_constraint.py` script implements physical constraints (non-decrease constraints) on the data. This program takes the filtered data from the last step as input and further filters the data to make them follow the non-decrease constraints. This step is important to produce the step plot.
-
-*Note: The snapshot (i.e., step plot) is produced by this code.*
+#### True Claim Select
+The `bayesian_select.py` script implements bayesian updating from the PAGER system to predict the confidence interval of deaths in each time points. Thereby select trustworkthy death values to plot the **near-real-time staircase plot** from the crwodsourcing data.
 
 To run this code:
 ```bash
