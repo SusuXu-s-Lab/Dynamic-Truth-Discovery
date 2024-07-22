@@ -47,7 +47,7 @@ The `bayesian_select.py` script implements bayesian updating from the PAGER syst
 To run this code:
 ```bash
 # the input file is the output file from the data filter
-python apply_constraint.py --input input_file_name.csv --output output_file_name.csv
+!python test_ba.py --input_file input.csv --output_file output.csv --plot_file output.png --sigma_prior PAGER_Combined_G_value
 ```
 
 #### Visualization with PAGER
