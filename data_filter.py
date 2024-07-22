@@ -29,7 +29,7 @@ def calculate_statistics(file_path):
         '99th': quantile_99_final_score
     }
 
-def filter_data(file_path, output_file_path, score_threshold, death_threshold=35000):
+def filter_data(file_path, output_file_path, score_threshold, death_threshold=1000000):
     # Load the updated dataset with the final score
     data = pd.read_csv(file_path)
 
