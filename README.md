@@ -31,7 +31,7 @@ python score_calculation.py --input input_file_name.csv --output output_file_nam
 ```
 
 #### Data Filter
-The `data_filter.py` script filters out the data points with high scores (high probability of being true). This program first calculates the quantiles of the final score and then filters the data based on the chosen quantile. The available quantiles are 50%, 75%, 85%, 90%, and 99%, with the 99% quantile performing better empirically.
+The `data_filter.py` script filters out the data points with high scores (high probability of being true). This program first calculates the quantiles of the final score and then filters the data based on the chosen quantile. The available quantiles are 50%, 75%, 85%, 90%, and 99%, with the 99% quantile performing the best empirically.
 
 *Note: Smaller quantiles may filter out data points ahead of the ground truth timeline but also come with more noise.*
 
