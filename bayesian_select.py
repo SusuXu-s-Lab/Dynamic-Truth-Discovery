@@ -61,6 +61,7 @@ def load_and_process_data(csv_file, sigma_prior):
             weight_prior = sigma_data**2 if sigma_data > 0 else sigma_prior**2
             weight_data = sigma_prior**2
             mu_new = (weight_prior * mu_data + weight_data * mu_prior) / (weight_prior + weight_data)
+            sigma_new = np.sqrt((weight_prior * weight_data) / (weight_prior + weight_data))
             
             # Determine the mode value for the decision rule
             mode_value = current_data.mode().iloc[0] if not current_data.mode().empty else mu_prior
@@ -86,6 +87,7 @@ def load_and_process_data(csv_file, sigma_prior):
 
         # Update prior for next iteration
         mu_prior = mu_new
+        sigma_prior = sigma_new
         
         # Store the true value
         true_values['time_slot'].append(t)
