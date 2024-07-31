@@ -11,7 +11,7 @@ def calculate_statistics(file_path):
     quantile_85_final_score = updated_df_with_independence_timeslot['final_score'].quantile(0.85)
     quantile_90_final_score = updated_df_with_independence_timeslot['final_score'].quantile(0.90)
     quantile_95_final_score = updated_df_with_independence_timeslot['final_score'].quantile(0.95)
-    quantile_99_final_score = updated_df_with_independence_timeslot['final_score'].quantile(0.99)
+    quantile_99_final_score = updated_df_with_independence_timeslot['final_score'].quantile(0.985)
 
     print("Mean final Score:", mean_final_score)
     print("75th Percentile final Score:", quantile_75_final_score)
