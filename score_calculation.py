@@ -55,8 +55,8 @@ def calculate_user_scores(df):
     df['adjusted_followers_count'] = df['author_public_metrics_followers_count'].fillna(0) + 1
     df['adjusted_following_count'] = df['author_public_metrics_following_count'].fillna(0) + 1
     df['follower_following_ratio'] = df['adjusted_followers_count'] / df['adjusted_following_count']
-    df['ratio_score'] = df['follower_following_ratio'].apply(lambda x: 1 if x > 1 else 0.5)
-    df['verified_score'] = df['author_verified'].fillna('FALSE').apply(lambda x: 1 if x == True else 0.5)
+    df['ratio_score'] = df['follower_following_ratio'].apply(lambda x: 1 if x > 1 else 0.01)
+    df['verified_score'] = df['author_verified'].fillna('FALSE').apply(lambda x: 1 if x == True else 0.01)
     return df
 
 def calculate_final_score(df):
